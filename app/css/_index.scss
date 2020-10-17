@@ -1,0 +1,23 @@
+html {
+  min-width: toRems(360);
+  @include breakpoint-down(small) {
+    // overflow-x: hidden;
+  }
+}
+body {
+  margin: 0;
+  box-sizing: border-box;
+  color: $color-white;
+  a {
+    text-decoration: none;
+  }
+  font-family: "Roboto", sans-serif;
+  @include breakpoint-down(small) {
+    overflow-x: auto;
+  }
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}

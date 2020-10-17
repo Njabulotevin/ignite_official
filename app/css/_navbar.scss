@@ -1,0 +1,123 @@
+.nav {
+  background-color: $color-primary;
+  transition: all 200ms ease-in-out;
+  
+  @include breakpoint-up(large) {
+    #menuBtn {
+      display: none;
+    }
+  }
+
+  .mobileMenu {
+    display: block;
+    @include breakpoint-up(large) {
+      display: none;
+    }
+  }
+
+  .largeScreenNav {
+    display: none;
+    @include breakpoint-up(large) {
+      display: flex;
+      flex-direction: column;
+      .largeExtra {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: toRems(36);
+        .moreLinks {
+          a {
+            color: $color-white;
+          }
+        }
+      }
+    }
+  }
+
+  .navPropsDiv {
+    display: none;
+    // @include breakpoint-up(large) {
+    //   display: block;
+    // }
+  }
+  .expanded {
+    min-height: toRems(360);
+  }
+  .navExpanded {
+    display: block;
+  }
+  &__topNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: toRems(44);
+    padding-right: toRems(44);
+    padding-top: toRems(16);
+    padding-bottom: toRems(16);
+    align-items: center;
+    @include breakpoint-up(large) {
+      padding: toRems(25) toRems(210);
+    }
+    span {
+      height: toRems(23);
+      width: toRems(23);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &__navLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    a {
+      color: $color-white;
+      margin-bottom: toRems(20);
+    }
+  }
+  &__searchDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    input {
+      width: toRems(294);
+      background-color: transparent;
+      border: toRems(1.5) solid $color-white;
+      padding: toRems(10);
+      color: $color-white;
+    }
+    span {
+      display: inline-block;
+      background-color: $color-white;
+      height: toRems(38);
+      width: toRems(51);
+      background-image: url(/assets/icon-search.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+  &__extraLinksDiv {
+    display: flex;
+    height: toRems(46);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: toRems(20);
+    background-color: $color-grayIsh;
+    gap: toRems(10);
+    a {
+      color: $color-primary;
+    }
+    @include breakpoint-up(large) {
+      gap: toRems(60);
+    }
+  }
+}
+
+.menuIcon {
+  background-image: url(/assets/icon-menu.svg);
+}
+
+.cancelIcon {
+  background-image: url(/assets/icon-cancel.svg);
+}

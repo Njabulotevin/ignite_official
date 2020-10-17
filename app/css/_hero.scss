@@ -1,0 +1,140 @@
+.hero {
+  background-color: $color-secondary;
+  padding-left: toRems(5);
+  padding-right: toRems(5);
+  min-height: toRems(550);
+  display: grid;
+  text-align: center;
+  @include breakpoint-up(large) {
+    min-height: toRems(593);
+    padding-left: $padding-Large-Sides;
+    padding-right: $padding-Large-Sides;
+  }
+  @include breakpoint-down(small) {
+  }
+  &__headline {
+    h1 {
+      text-align: center;
+      padding-top: toRems(52);
+      color: $color-grayIsh;
+      font-size: toRems(45);
+      span {
+        font-weight: 100;
+      }
+      @include breakpoint-down(small) {
+        font-size: toRems(35);
+      }
+      @include breakpoint-up(large) {
+        text-align: left;
+      }
+    }
+  }
+  &__buttonGroup {
+    margin-top: toRems(20);
+    text-align: center;
+    a {
+      display: inline-block;
+      width: toRems(155);
+      padding: toRems(10);
+      text-align: center;
+    }
+    #enquire {
+      background-color: transparent;
+      border: toRems(1.5) solid $color-grayIsh;
+      color: $color-grayIsh;
+      margin-bottom: toRems(10);
+    }
+    #register {
+      background-color: $color-grayIsh;
+      color: $color-secondary;
+    }
+  }
+  &__group1 {
+    position: relative;
+    min-height: toRems(200);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include breakpoint-up(large) {
+      flex-direction: row;
+      align-items: flex-end;
+    }
+  }
+  &__img {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: toRems(251);
+    width: toRems(356);
+    img {
+      width: 100%;
+      @include breakpoint-up(large) {
+        width: 48.875vw;
+        position: absolute;
+        top: 1.6rem;
+        right: toRems(-5);
+      }
+    }
+  }
+  &__headline {
+    @include breakpoint-up(large){
+      margin-top: 6rem;
+      margin-left: 6rem;
+    }
+  }
+
+  &__grades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -3.2rem;
+    background-color: $color-white;
+    color: $color-secondary;
+    // font-weight: 200;
+    width: toRems(236);
+    height: toRems(52);
+    h3 {
+      font-weight: 200;
+      font-size: toRems(15);
+    }
+    @include breakpoint-up(large) {
+      position: static;
+      top: 0;
+    }
+    @include breakpoint-up(large) {
+      width: toRems(618);
+      height: toRems(95);
+      align-self: flex-end;
+      h3 {
+        font-size: toRems(30);
+      }
+    }
+  }
+  &__subjects {
+    background-color: $color-primary;
+    color: $color-white;
+    border: toRems(1.5) solid $color-white;
+    padding: toRems(25) toRems(80);
+    justify-self: flex-end;
+    p {
+      font-size: toRems(14);
+    }
+    @include breakpoint-up(large) {
+      width: toRems(618);
+      height: toRems(153);
+
+      p {
+        font-size: toRems(19);
+      }
+    }
+  }
+  &__group2 {
+    position: relative;
+    align-self: flex-end;
+    @include breakpoint-up(large) {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
