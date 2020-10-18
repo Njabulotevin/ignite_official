@@ -49,28 +49,26 @@
                   <span id="required">*</span>
                 </label>
                 <div class="gender">
-                  <div class="form-group">
+                  <div class="form-group genderControl">
                     <input
                       class="form-check-input"
                       type="radio"
                       name="gender"
                       value="option1"
-                      checked
                     />
-                    <label for="">
+                    <label class="genderlabel" for="">
                       Male
                     </label>
                   </div>
-                  <div class="form-group">
+                  <div class="form-group genderControl">
                     <input
                       class="form-check-input"
                       type="radio"
                       name="gender"
                       value="option1"
-                      checked
                     />
 
-                    <label for="">
+                    <label class="genderlabel" for="">
                       Female
                     </label>
                   </div>
@@ -111,7 +109,6 @@
                       name="exampleRadios"
                       id="exampleRadios1"
                       value="option1"
-                      checked
                     />
                     <label for="">
                       Yes
@@ -124,7 +121,6 @@
                       name="exampleRadios"
                       id="exampleRadios1"
                       value="option1"
-                      checked
                     />
                     <label for="">
                       No
@@ -211,10 +207,7 @@
                 </label>
               </div>
               <label id="service" for=""
-                >Type of service (Registration Fee R60 once-off)<span
-                  id="required"
-                  >*</span
-                ></label
+                >Type of service<span id="required">*</span></label
               >
               <div class="priceServiceCard oneOne">
                 <div class="check">
@@ -227,7 +220,10 @@
                 </div>
                 <div class="price">
                   <p>ONE-ON-ONE</p>
-                  <select id="inputState" class="form-control myInput">
+                  <select
+                    id="inputState"
+                    class="form-control myInput myDropdown"
+                  >
                     <option selected
                       >Pay As You Use (PAYU) <br />
                       R80 per hour</option
@@ -255,7 +251,10 @@
                 </div>
                 <div class="price">
                   <p>EXTRA CLASS</p>
-                  <select id="inputState" class="form-control myInput">
+                  <select
+                    id="inputState"
+                    class="form-control myInput myDropdown"
+                  >
                     <option selected
                       >1 SUBJECT <br />
                       R250 per hour</option
@@ -282,7 +281,10 @@
                 </div>
                 <div class="price">
                   <p>ONLINE CLASSES</p>
-                  <select id="inputState" class="form-control myInput">
+                  <select
+                    id="inputState"
+                    class="form-control myInput myDropdown"
+                  >
                     <option selected
                       >Pay As You Use (PAYU) <br />
                       R90 per hour</option
@@ -315,11 +317,99 @@
                 <label for=""> Cell No<span id="required">*</span> </label>
                 <input type="text" class="form-control myInput" />
               </div>
+            </div>
+            <!-- Recent results -->
+            <div class="resultsInfo">
+              <h5>Most Recent Academic Results:</h5>
+              <p>
+                (We need you to be as accurate as possible to make sure you get
+                the help you need)
+              </p>
+              <div class="form-group">
+                <label for="">
+                  Enter your subject and hit the add button to add it to the
+                  list<span id="required">*</span>
+                </label>
+                <div class="inputGroup">
+                  <input
+                    placeholder="Subject"
+                    type="text"
+                    class="form-control myInput myInputSub"
+                  />
+                  <input
+                    placeholder="Level"
+                    type="text"
+                    class="form-control myInput myInputLevel"
+                  />
+                  <input
+                    placeholder="%"
+                    type="text"
+                    class="form-control myInput myInputPercent"
+                  />
+                  <a href="#" class="btn addBtn">
+                    <svg
+                      width="2em"
+                      height="2em"
+                      viewBox="0 0 16 16"
+                      class="bi bi-plus"
+                      fill="#ffffff"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"
+                      />
+                    </svg>
+                  </a>
+                </div>
               </div>
-              <!-- Recent results -->
-              <div class="resultsInfo">
-                <h5>Most Recent Academic Results: </h5>
-                <p>(We need you to be as accurate as possible to make sure you get the help you need)</p>
+              <div class="outputSubjects">
+                <div class="subj">
+                  <h6 class="mySbj">Accounting</h6>
+                  <h6 class="mylevel">7</h6>
+                  <h6 class="myPercent">87%</h6>
+                  <span>
+                    <svg
+                      width="2em"
+                      height="2em"
+                      viewBox="0 0 16 16"
+                      class="bi bi-x"
+                      fill=" #e52d27"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- confirm rules -->
+            <div class="terms_rules">
+              <div class="form-group form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1">
+                  commit myself to Ignite Academic Solutions for the year 2020.
+                  I commit myself to cooperate and submit my progress results
+                  card every term as long as I am still part of Ignite Academic
+                  Solutions.
+                </label>
+              </div>
+              <div class="form-group form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1">
+                  I accept all the <a href="">terms and rules</a>
+                </label>
               </div>
             </div>
           </form>

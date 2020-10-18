@@ -34,3 +34,9 @@ $breakpoints-down: (
   $results: 0rem;
   @return ($pixels / 16) + rem;
 }
+
+@mixin breakpoint-down2($size) {
+  @media (max-width:  $size) {
+    @content;
+  }
+}
