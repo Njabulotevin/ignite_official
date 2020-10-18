@@ -42,6 +42,9 @@ body a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .notice span {
@@ -49,9 +52,7 @@ body a {
   padding: 15px;
   height: 30px;
   width: 30px;
-  border-radius: 6.5px;
   background-color: transparent;
-  border: 1.5px solid #101a21;
   background-image: url(/assets/icon-cancel-b.svg);
   background-repeat: no-repeat;
   background-position: center;
