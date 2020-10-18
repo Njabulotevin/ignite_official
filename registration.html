@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="app/css/main.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="wrapper__inner">
+        <!-- Header  -->
+        <header>
+          <div class="topHeader">
+            <div class="topHeader__imgContainer">
+              <img src="assets/logo.svg" alt="logo" />
+            </div>
+            <h1 class="topHeader__title">Registration Form</h1>
+          </div>
+          <hr class="topLine" />
+        </header>
+        <section id="form">
+          <form action="">
+            <!-- Personal information -->
+            <div class="personalinfo">
+              <div class="form-group name">
+                <label for=""> Name <span id="required">*</span> </label>
+                <input type="text" class="form-control myInput" />
+              </div>
+              <div class="form-group surname">
+                <label for=""> Surname <span id="required">*</span> </label>
+                <input type="text" class="form-control myInput" />
+              </div>
+              <div class="form-group gender" id="genderGroup">
+                <label for=""
+                  >Gender
+                  <span id="required">*</span>
+                </label>
+                <div class="gender">
+                  <div class="form-group">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gender"
+                      value="option1"
+                      checked
+                    />
+                    <label for="">
+                      Male
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gender"
+                      value="option1"
+                      checked
+                    />
+
+                    <label for="">
+                      Female
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group grade">
+                <label for=""> Grade<span id="required">*</span> </label>
+                <select id="inputState" class="form-control myInput">
+                  <option selected>Select your grade</option>
+                  <option selected>Grade 7</option>
+                  <option selected>Grade 8</option>
+                  <option selected>Grade 9</option>
+                  <option selected>Grade 10</option>
+                  <option selected>Grade 11</option>
+                  <option selected>Grade 12</option>
+                </select>
+
+                <!-- <input type="text" class="form-control myInput" /> -->
+              </div>
+              <div class="form-group schoolName">
+                <label for=""> School Name<span id="required">*</span> </label>
+                <input type="text" class="form-control myInput" />
+              </div>
+              <div class="form-group cellPhone">
+                <label for="">
+                  Cellphone Number<span id="required">*</span>
+                </label>
+                <input type="text" class="form-control myInput" />
+              </div>
+              <div class="form-group forWhatsApp">
+                <label for="">Is this Number available for WhatsApp?</label>
+                <div class="whatsAppNumber">
+                  <div class="form-group">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="exampleRadios"
+                      id="exampleRadios1"
+                      value="option1"
+                      checked
+                    />
+                    <label for="">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="exampleRadios"
+                      id="exampleRadios1"
+                      value="option1"
+                      checked
+                    />
+                    <label for="">
+                      No
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- registration plan -->
+            <div class="regPlan">
+              <label id="subjects" for=""
+                >Subjects<span id="required">*</span></label
+              >
+              <div class="form-group">
+                <input
+                  class="form-check-input subjectsCheck"
+                  type="checkbox"
+                  name="subject"
+                  id="exampleRadios1"
+                  value="option1"
+                />
+                <label class="subjectsLabel" for="">
+                  Mathemathics
+                </label>
+              </div>
+              <div class="form-group">
+                <input
+                  class="form-check-input subjectsCheck"
+                  type="checkbox"
+                  name="subject"
+                  id="exampleRadios1"
+                  value="option1"
+                />
+                <label class="subjectsLabel" for="">
+                  Mathemathical literacy
+                </label>
+              </div>
+              <div class="form-group">
+                <input
+                  class="form-check-input subjectsCheck"
+                  type="checkbox"
+                  name="subject"
+                  id="exampleRadios1"
+                  value="option1"
+                />
+                <label class="subjectsLabel" for="">
+                  Physical Science
+                </label>
+              </div>
+              <div class="form-group">
+                <input
+                  class="form-check-input subjectsCheck"
+                  type="checkbox"
+                  name="subject"
+                  id="exampleRadios1"
+                  value="option1"
+                />
+                <label class="subjectsLabel" for="">
+                  Natural Science
+                </label>
+              </div>
+              <div class="form-group">
+                <input
+                  class="form-check-input subjectsCheck"
+                  type="checkbox"
+                  name="subject"
+                  id="exampleRadios1"
+                  value="option1"
+                />
+                <label class="subjectsLabel" for="">
+                  Life Science
+                </label>
+              </div>
+              <div class="form-group">
+                <input
+                  class="form-check-input subjectsCheck"
+                  type="checkbox"
+                  name="subject"
+                  value="option1"
+                />
+                <label class="subjectsLabel" for="">
+                  Accounting
+                </label>
+              </div>
+              <label id="service" for=""
+                >Type of service (Registration Fee R60 once-off)<span
+                  id="required"
+                  >*</span
+                ></label
+              >
+              <div class="priceServiceCard oneOne">
+                <div class="check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="service"
+                    value="option1"
+                  />
+                </div>
+                <div class="price">
+                  <p>ONE-ON-ONE</p>
+                  <select id="inputState" class="form-control myInput">
+                    <option selected
+                      >Pay As You Use (PAYU) <br />
+                      R80 per hour</option
+                    >
+                    <option
+                      >Weekly Plan (3 sessions)<br />
+                      R200 per week</option
+                    >
+                    <option
+                      >Weekly Plan (12 sessions)<br />
+                      R600 per month</option
+                    >
+                  </select>
+                </div>
+              </div>
+
+              <div class="priceServiceCard extraClasses">
+                <div class="check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="service"
+                    value="option1"
+                  />
+                </div>
+                <div class="price">
+                  <p>EXTRA CLASS</p>
+                  <select id="inputState" class="form-control myInput">
+                    <option selected
+                      >1 SUBJECT <br />
+                      R250 per hour</option
+                    >
+                    <option
+                      >2 SUBJECTS <br />
+                      R350 per week</option
+                    >
+                    <option
+                      >3 SUBJECTs<br />
+                      R450 per month</option
+                    >
+                  </select>
+                </div>
+              </div>
+              <div class="priceServiceCard online">
+                <div class="check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="service"
+                    value="option1"
+                  />
+                </div>
+                <div class="price">
+                  <p>ONLINE CLASSES</p>
+                  <select id="inputState" class="form-control myInput">
+                    <option selected
+                      >Pay As You Use (PAYU) <br />
+                      R90 per hour</option
+                    >
+                    <option
+                      >Weekly Plan (3 sessions) <br />
+                      R250 per week</option
+                    >
+                    <option
+                      >Weekly Plan (12 sessions)<br />
+                      R700 per month</option
+                    >
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <!-- Parent / Guardian -->
+            <div class="parentInfo">
+              <h5>Guardian / Parent Details</h5>
+              <div class="form-group">
+                <label for=""> Name<span id="required">*</span> </label>
+                <input type="text" class="form-control myInput" />
+              </div>
+              <div class="form-group">
+                <label for=""> Surname<span id="required">*</span> </label>
+                <input type="text" class="form-control myInput" />
+              </div>
+              <div class="form-group">
+                <label for=""> Cell No<span id="required">*</span> </label>
+                <input type="text" class="form-control myInput" />
+              </div>
+              </div>
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/app/js/index.js"></script>
+  </body>
+</html>

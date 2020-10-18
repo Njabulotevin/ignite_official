@@ -5,3 +5,7 @@ menuBtn.click(() => {
   $(".navPropsDiv").toggleClass("navExpanded");
   $(".nav").toggleClass("expanded");
 });
+
+$("#removeNotice").click(() => {
+  $(".notice").remove();
+});
